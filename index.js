@@ -40,6 +40,7 @@ const numArr = [11, 52, 35, 49, 5, 26, 117];
 // 5. Order the numbers in descending order
 // 6. Find the sum of all two digit numbers and display it in HTML
 // 7. Find all numbers which are even
+// 8. Rotate the array three times so that the end result would look like this: '[5, 26, 117, 11, 52, 35, 49]'
 
 const person1 = {
   name: 'Asen',
@@ -75,3 +76,22 @@ const duplicates = [1, 1, 1, 2, 2, 3, 3, 3, 3, 3, 4, 5, 6, 7, 7, 7];
 // 2. Count how many occurances of each number there are (Example: [{1: 3}, {2: 2}, {3: 5} ...])
 // 3. Find the sum of all unique numbers
 // 4. Find all numbers that occur only once and display it in HTML
+
+
+const basicString = 'NeMeZanimavaiSGluposti';
+// 1. Turn the string to lower case
+// 2. Turn the string to upper case
+// 3. Split the string to words
+// 4. Turn all upper case letters to lower cace and all lower case letters to uper case
+// 5. Create a list of letters from the string
+// 6. Count how many times each letter occurs in the string and display it (Example: [{'a': 3}, {'b': 2}, {'c': 5} ...])
+// 7. Rotate the string three times so that the result will look like this: 'stiNeMeZanimavaiSGlupo' (don't use splitting and concatination)
+
+const splitString = "Mnogo mi se pie voda";
+// 1. Create an array that looks like this: ['Mnogo','mi','se','pie','voda'];
+// 2. Substitute the word 'voda' with whatever you want :D and display the new string;
+
+
+// --------------- Classes ------------------ //
+// Will add new tasks here shortly
+
