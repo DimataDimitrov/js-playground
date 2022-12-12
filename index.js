@@ -34,11 +34,36 @@ console.log(kek);
 
 const numArr = [11, 52, 35, 49, 5, 26, 117];
 // 1. Find the biggest number in the array
+const maxnum = Math.max(...numArr);
+console.log(maxnum);
 // 2. Find the smallest number in the array
+const minnum = Math.min(...numArr);
+console.log(minnum);
 // 3. Find the sum of all numbers in the array
+let numsum = 0;
+numArr.forEach((item) => {
+  numsum += item;
+});
+console.log(numsum);
 // 4. Order the numbers in ascending order and display it in HTML
+const ascnum = numArr.sort((a, b) => a - b);
+console.log(ascnum);
+document.getElementById('asc').innerHTML = '<b>' + ascnum + '<b>';
 // 5. Order the numbers in descending order
+const descnum = numArr.sort((b, a) => a - b);
+console.log(descnum);
 // 6. Find the sum of all two digit numbers and display it in HTML
+
+let numsumtwo = 0; //tva ne bachka deeeba
+numArr.forEach((item) => {
+  //tva ne bachka deeeba
+  const itemlenght = item.toString.length; //tva ne bachka deeeba
+  if (itemlenght > 2) {
+    //tva ne bachka deeeba
+    numsumtwo += item; //tva ne bachka deeeba
+  }
+});
+console.log(numsumtwo);
 // 7. Find all numbers which are even
 // 8. Rotate the array three times so that the end result would look like this: '[5, 26, 117, 11, 52, 35, 49]'
 
@@ -77,7 +102,6 @@ const duplicates = [1, 1, 1, 2, 2, 3, 3, 3, 3, 3, 4, 5, 6, 7, 7, 7];
 // 3. Find the sum of all unique numbers
 // 4. Find all numbers that occur only once and display it in HTML
 
-
 const basicString = 'NeMeZanimavaiSGluposti';
 // 1. Turn the string to lower case
 // 2. Turn the string to upper case
@@ -87,11 +111,9 @@ const basicString = 'NeMeZanimavaiSGluposti';
 // 6. Count how many times each letter occurs in the string and display it (Example: [{'a': 3}, {'b': 2}, {'c': 5} ...])
 // 7. Rotate the string three times so that the result will look like this: 'stiNeMeZanimavaiSGlupo' (don't use splitting and concatination)
 
-const splitString = "Mnogo mi se pie voda";
+const splitString = 'Mnogo mi se pie voda';
 // 1. Create an array that looks like this: ['Mnogo','mi','se','pie','voda'];
 // 2. Substitute the word 'voda' with whatever you want :D and display the new string;
 
-
 // --------------- Classes ------------------ //
 // Will add new tasks here shortly
-
