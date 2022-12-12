@@ -36,31 +36,40 @@ const numArr = [11, 52, 35, 49, 5, 26, 117];
 // 1. Find the biggest number in the array
 const maxnum = Math.max(...numArr);
 console.log(maxnum);
+// Feedback: Perfect!
+
 // 2. Find the smallest number in the array
 const minnum = Math.min(...numArr);
 console.log(minnum);
+// Feedback: Perfect!
+
 // 3. Find the sum of all numbers in the array
 let numsum = 0;
 numArr.forEach((item) => {
   numsum += item;
 });
 console.log(numsum);
+// Feedback: Very good! Now do it with the reduce() function
+
 // 4. Order the numbers in ascending order and display it in HTML
 const ascnum = numArr.sort((a, b) => a - b);
 console.log(ascnum);
 document.getElementById('asc').innerHTML = '<b>' + ascnum + '<b>';
+// Feedback: Perfect
+
 // 5. Order the numbers in descending order
 const descnum = numArr.sort((b, a) => a - b);
 console.log(descnum);
-// 6. Find the sum of all two digit numbers and display it in HTML
+// Feedback: Very good but I would rather write it: .sort((a, b) => b - a) as it shows the proper order 
 
-let numsumtwo = 0; //tva ne bachka deeeba
+// 6. Find the sum of all two digit numbers and display it in HTML
+let numsumtwo = 0; //tva ne bachka deeeba (Bachka si)
 numArr.forEach((item) => {
-  //tva ne bachka deeeba
-  const itemlenght = item.toString.length; //tva ne bachka deeeba
+  //tva ne bachka deeeba (Bachka si)
+  const itemlenght = item.toString.length; //tva ne bachka deeeba (Tva verno ne bachka zashtoto .toString e method so toString() e pravilno
   if (itemlenght > 2) {
-    //tva ne bachka deeeba
-    numsumtwo += item; //tva ne bachka deeeba
+    //tva ne bachka deeeba (Ne si stignal do tuk oshte)
+    numsumtwo += item;
   }
 });
 console.log(numsumtwo);
