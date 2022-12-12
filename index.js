@@ -66,8 +66,8 @@ console.log(descnum);
 let numsumtwo = 0; //tva ne bachka deeeba (Bachka si)
 numArr.forEach((item) => {
   //tva ne bachka deeeba (Bachka si)
-  const itemlenght = item.toString.length; //tva ne bachka deeeba (Tva verno ne bachka zashtoto .toString e method so toString() e pravilno
-  if (itemlenght > 2) {
+  const itemlenght = item.toString(); //tva ne bachka deeeba (Tva verno ne bachka zashtoto .toString e method so toString() e pravilno
+  if (itemlenght.length > 2) {
     //tva ne bachka deeeba (Ne si stignal do tuk oshte)
     numsumtwo += item;
   }
