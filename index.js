@@ -51,6 +51,9 @@ numArr.forEach((item) => {
 console.log(numsum);
 // Feedback: Very good! Now do it with the reduce() function
 
+// Feedback on Feedback xD
+console.log(numArr.reduce((a, b) => a + b, 0));
+
 // 4. Order the numbers in ascending order and display it in HTML
 const ascnum = numArr.sort((a, b) => a - b);
 console.log(ascnum);
@@ -58,21 +61,21 @@ document.getElementById('asc').innerHTML = '<b>' + ascnum + '<b>';
 // Feedback: Perfect
 
 // 5. Order the numbers in descending order
-const descnum = numArr.sort((b, a) => a - b);
+const descnum = numArr.sort((a, b) => b - a);
 console.log(descnum);
-// Feedback: Very good but I would rather write it: .sort((a, b) => b - a) as it shows the proper order 
+// Feedback: Very good but I would rather write it: .sort((a, b) => b - a) as it shows the proper order
+// Feedback on Feedback xD: whats the difference?
 
 // 6. Find the sum of all two digit numbers and display it in HTML
-let numsumtwo = 0; //tva ne bachka deeeba (Bachka si)
+let numsumtwo = 0;
 numArr.forEach((item) => {
-  //tva ne bachka deeeba (Bachka si)
-  const itemlenght = item.toString(); //tva ne bachka deeeba (Tva verno ne bachka zashtoto .toString e method so toString() e pravilno
-  if (itemlenght.length > 2) {
-    //tva ne bachka deeeba (Ne si stignal do tuk oshte)
+  const itemlenght = item.toString().length;
+  if (itemlenght == 2) {
     numsumtwo += item;
   }
 });
 console.log(numsumtwo);
+
 // 7. Find all numbers which are even
 // 8. Rotate the array three times so that the end result would look like this: '[5, 26, 117, 11, 52, 35, 49]'
 
