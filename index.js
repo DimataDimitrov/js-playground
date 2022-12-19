@@ -75,6 +75,27 @@ numArr.forEach((item) => {
   }
 });
 console.log(numsumtwo);
+document.getElementById('numsum').innerHTML = '<b>' + numsumtwo + '<b>';
+// Find the sum of all two digit numbers with filter
+// I know its not the best option, but it is what it is..
+var numsumtwofilt = 0;
+let filt_array1 = numArr.filter(function (value) {
+  if (value >= 10 && value <= 99) {
+    numsumtwofilt = numsumtwofilt + value;
+  }
+});
+console.log(numsumtwofilt);
+
+//another option with filter, maybe better then the previous one..
+var numsumtwofilt1 = 0;
+let filt_array2 = numArr.filter(function (value) {
+  if (value.toString().length == 2) {
+    numsumtwofilt1 = numsumtwofilt1 + value;
+  }
+});
+console.log(numsumtwofilt1);
+
+// Find the sum of all two digit numbers with reduce
 
 // 7. Find all numbers which are even
 // 8. Rotate the array three times so that the end result would look like this: '[5, 26, 117, 11, 52, 35, 49]'
