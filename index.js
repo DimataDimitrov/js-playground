@@ -64,7 +64,7 @@ document.getElementById('asc').innerHTML = '<b>' + ascnum + '<b>';
 const descnum = numArr.sort((a, b) => b - a);
 console.log(descnum);
 // Feedback: Very good but I would rather write it: .sort((a, b) => b - a) as it shows the proper order
-// Feedback on Feedback xD: whats the difference?
+// Feedback on Feedback xD: whats the difference? => It is more readable for humans thats all
 
 // 6. Find the sum of all two digit numbers and display it in HTML
 let numsumtwo = 0;
@@ -104,11 +104,20 @@ const Numbers = numArr.reduce((accumulator, currentValue) => {
 }, []);
 console.log(numsumtwofiltreduce);
 
+/* Feedback:
+ Viks: You don't need 'const Numbers =','let filt_array2 =' or 'let filt_array1 =' as you don't use the variables/constants anywhere
+ Viks: You used reduce and filter in two separate solutions instead of one. Try doing => console.log( numArr.filter(...).reduce(...) )
+ */
+
+
 // 7. Find all numbers which are even
 const even = numArr.filter((number) => {
   return number % 2 === 0; //Find if variable is divisible by 2
 });
 console.log(even);
+
+// Feedback you can simplify by doing: numArr.filter(number => number % 2 === 0).It will work the same way and it will look cleaner
+// (also can help you simplify some code from the previous tasks)
 
 // 8. Rotate the array three times so that the end result would look like this: '[5, 26, 117, 11, 52, 35, 49]'
 
