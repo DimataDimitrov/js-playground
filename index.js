@@ -105,6 +105,11 @@ const Numbers = numArr.reduce((accumulator, currentValue) => {
 console.log(numsumtwofiltreduce);
 
 // 7. Find all numbers which are even
+const even = numArr.filter((number) => {
+  return number % 2 === 0; //Find if variable is divisible by 2
+});
+console.log(even);
+
 // 8. Rotate the array three times so that the end result would look like this: '[5, 26, 117, 11, 52, 35, 49]'
 
 const person1 = {
